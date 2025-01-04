@@ -6,7 +6,7 @@ This project combines YOLOv11 and SAM2.1b+ models for advanced pest detection in
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-repo-url.git
+git clone https://github.com/Faris-Faiz/CVAssignment-PestDetectorAgriculture.git
 cd YOLOv11_SAM21bplus_pestDetector
 ```
 

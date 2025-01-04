@@ -1,0 +1,15 @@
+streamlit
+numpy==2.0.2
+scipy==1.15.0
+matplotlib
+pillow
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 (important, must be only cuda 12.1)
+supervision
+ultralytics
+
+# SAM2 Dependencies
+# Install SAM2 from source:
+# git clone https://github.com/facebookresearch/sam2.git
+# cd sam2
+# pip install -e .[dev] -q
+# make sure rename cloned sam2 folder into sam2_git after finishing installing the dependencies

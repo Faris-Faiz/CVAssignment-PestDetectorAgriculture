@@ -29,7 +29,15 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install -r requirements.txt
 ```
 
-5. Verify numpy version:
+5. Install SAM2 from source:
+```bash
+git clone https://github.com/facebookresearch/sam2.git
+cd sam2
+pip install -e .[dev] -q
+# Rename cloned sam2 folder to sam2_git after installation
+```
+
+6. Verify numpy version:
 ```bash
 pip install numpy==2.0.2
 ```
@@ -64,6 +72,12 @@ pip install numpy==2.0.2
 nvcc --version
 ```
 Ensure CUDA 12.1 is installed.
+
+4. If SAM2 fails to work after installation, ensure you have installed PyTorch with CUDA 12.1 support:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+Other PyTorch versions without CUDA 12.1 support will not work.
 
 ## Important Notes
 
